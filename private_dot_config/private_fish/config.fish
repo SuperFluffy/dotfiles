@@ -5,7 +5,7 @@ set -gx FZF_DEFAULT_COMMAND 'rg --files'
 set -gx VOLTA_HOME "$HOME/.volta"
 
 if string match -iq -- darwin (uname) 
-	set -gx SSH_AUTH_SOCK "$HOME/.gnupg/S.gpg-agent.ssh"
+	set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
 end
 
 if status is-login
