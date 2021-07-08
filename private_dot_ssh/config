@@ -1,0 +1,4 @@
+# Run UPDATESTARTUPTTY on every invocation so that gpg can find the right TTY
+# on which ssh is running.
+# Source: https://bugzilla.mindrot.org/show_bug.cgi?id=2824#c9
+Match host * exec "gpg-connect-agent UPDATESTARTUPTTY /bye"
