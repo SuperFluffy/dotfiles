@@ -6,6 +6,7 @@ set -gx VOLTA_HOME "$HOME/.volta"
 
 if string match -iq -- darwin (uname) 
 	set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+	gpgconf --launch gpg-agent
 end
 
 if status is-login
