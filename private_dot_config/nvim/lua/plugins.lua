@@ -20,16 +20,9 @@ function()
     }
 
     use { "nvim-treesitter/nvim-treesitter", run = ':TSUpdate' }
-    -- -- use "ryanoasis/vim-devicons"
-    -- use "sbdchd/neoformat"
+    --
     use "neovim/nvim-lspconfig"
-    use "hrsh7th/nvim-compe"
-    -- use "windwp/nvim-autopairs"
-    -- -- use "alvan/vim-closetag"
-    -- use "tweekmonster/startuptime.vim"
-    use "onsails/lspkind-nvim"
-    -- use "ray-x/lsp_signature.nvim"
-
+    use "simrat39/rust-tools.nvim"
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
@@ -38,11 +31,6 @@ function()
         'nvim-telescope/telescope-fzy-native.nvim',
         requires = 'nvim-telescope/telescope.nvim'
     }
-        -- use {
-        -- 'nvim-telescope/telescope-media-files.nvim',
-        -- requires = 'nvim-telescope/telescope.nvim'
-    -- }
-    use "karb94/neoscroll.nvim"
 
     use {'dracula/vim', as = 'dracula' }
     use 'shaunsingh/solarized.nvim'

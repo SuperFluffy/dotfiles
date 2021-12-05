@@ -9,5 +9,5 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- Currently buggy
--- utils.opt('w', 'foldmethod', 'expr')
--- utils.opt('w', 'foldexpr', 'nvim_treesitter#foldexpr()')
+utils.opt('w', 'foldmethod', 'expr')
+utils.opt('w', 'foldexpr', 'nvim_treesitter#foldexpr()')
