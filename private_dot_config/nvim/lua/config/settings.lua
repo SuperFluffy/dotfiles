@@ -16,7 +16,7 @@ utils.opt('b', 'tabstop', indent_len) -- a tab accounts for <indent_len> spaces
 utils.opt('o', 'completeopt', 'menuone,noselect')
 utils.opt('o', 'hidden', true) -- allow to switch away from editted buffers without first saving
 utils.opt('o', 'mouse', 'a') -- enable mouse interaction in all modes
-utils.opt('o', 'laststatus', 2) -- always have a status line
+utils.opt('o', 'laststatus', 3) -- always have a status line
 utils.opt('o', 'scrolloff', 4 ) -- keep a "margin" of 4 lines at the bottom and top of a buffer
 utils.opt('o', 'shiftround', true) -- round to multiples of <shiftwidth> when shifting lines
 utils.opt('o', 'showtabline', 2) -- always show the tabline

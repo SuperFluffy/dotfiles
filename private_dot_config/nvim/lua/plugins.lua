@@ -3,13 +3,12 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(
 function()
     use {'wbthomason/packer.nvim', opt = true}
-    use {"lukas-reineke/indent-blankline.nvim", branch = "lua", disable = true}
+    use 'lukas-reineke/indent-blankline.nvim' 
 
     use "nvim-lua/plenary.nvim"
     -- -- use "lewis6991/gitsigns.nvim"
     use 'tpope/vim-abolish'
     use 'tpope/vim-fugitive'
-    use "nvim-lua/popup.nvim"
     use {
         'itchyny/lightline.vim',
         requires = 'tpope/vim-fugitive'
@@ -20,17 +19,21 @@ function()
     }
 
     use { "nvim-treesitter/nvim-treesitter", run = ':TSUpdate' }
+
+    use 'kyazdani42/nvim-tree.lua'
+
     --
     use "neovim/nvim-lspconfig"
     use "simrat39/rust-tools.nvim"
     use {
         'nvim-telescope/telescope.nvim',
-        requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
+        requires = {{'nvim-lua/plenary.nvim'}}
     }
     use {
         'nvim-telescope/telescope-fzy-native.nvim',
         requires = 'nvim-telescope/telescope.nvim'
     }
+    use 'nvim-telescope/telescope-ui-select.nvim'
 
     use {'dracula/vim', as = 'dracula' }
     use 'shaunsingh/solarized.nvim'
