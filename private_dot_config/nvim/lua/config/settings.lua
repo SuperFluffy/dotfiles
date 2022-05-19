@@ -25,6 +25,8 @@ utils.opt('o', 'splitright', true) -- when splitting vertically, split to the ri
 utils.opt('o', 'startofline', false) -- Store and restore the cursor position when changing around buffers
 utils.opt('o', 'wildmode', 'list:longest,full')
 
+vim.opt.updatetime = 300
+
 -- utils.opt('w', 'foldmethod', 'syntax') -- 
 utils.opt('w', 'colorcolumn', '100')
 utils.opt('w', 'number', true) -- Show line numbers

@@ -22,9 +22,25 @@ function()
 
     use 'kyazdani42/nvim-tree.lua'
 
-    --
+    -- Common configurations for nvim LSP client
     use "neovim/nvim-lspconfig"
+
+    -- Completion framework
+    use "hrsh7th/nvim-cmp"
+    -- LSP completion source for nvim-cmp
+    use "hrsh7th/cmp-nvim-lsp"
+    -- Snippet completion source for nvim-cmp
+    use "hrsh7th/cmp-vsnip"
+    -- Buffer completion source for nvim-cmp
+    use "hrsh7th/cmp-buffer"
+    -- Path completion source for nvim-cmp
+    use "hrsh7th/cmp-path"
+
     use "simrat39/rust-tools.nvim"
+
+    -- Snippet engine
+    use "hrsh7th/vim-vsnip"
+
     use {
         'nvim-telescope/telescope.nvim',
         requires = {{'nvim-lua/plenary.nvim'}}
@@ -33,9 +49,11 @@ function()
         'nvim-telescope/telescope-fzy-native.nvim',
         requires = 'nvim-telescope/telescope.nvim'
     }
-    use 'nvim-telescope/telescope-ui-select.nvim'
+    use {
+        'nvim-telescope/telescope-ui-select.nvim',
+        requires = 'nvim-telescope/telescope.nvim'
+    }
 
-    use {'dracula/vim', as = 'dracula' }
     use 'shaunsingh/solarized.nvim'
 
     use 'tpope/vim-commentary'
@@ -43,7 +61,6 @@ function()
         -- use "nekonako/xresources-nvim"
     --
     -- snippets
-    use "hrsh7th/vim-vsnip"
     -- use "rust-lang/vscode-rust"
 end
 )
