@@ -57,10 +57,7 @@ function()
     use 'shaunsingh/solarized.nvim'
 
     use 'tpope/vim-commentary'
+    use 'tpope/vim-repeat'
     use 'tpope/vim-surround'
-        -- use "nekonako/xresources-nvim"
-    --
-    -- snippets
-    -- use "rust-lang/vscode-rust"
 end
 )
