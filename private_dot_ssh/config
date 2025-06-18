@@ -1,9 +1,0 @@
-# Run UPDATESTARTUPTTY on every invocation so that gpg can find the right TTY
-# on which ssh is running.
-# Source: https://bugzilla.mindrot.org/show_bug.cgi?id=2824#c9
-Host localhost
-ForwardAgent yes
-AddKeysToAgent ask
-# use command line redirection to connect tty to stderr instead of stdin
-# see https://unix.stackexchange.com/a/674769  
-Match host * exec "set -x GPG_TTY (tty <&2) && gpg-connect-agent UPDATESTARTUPTTY /bye"
