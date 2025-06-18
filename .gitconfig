@@ -1,0 +1,14 @@
+[user]
+	email = github@aberrat.io
+	name = Richard Janis Goldschmidt
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[worktree]
+	guessRemote = true
+[merge]
+	conflictstyle = zdiff3
+[core]
+	commentChar = ";"

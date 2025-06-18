@@ -1,0 +1,10 @@
+theme = "everforest_dark"
+
+[editor]
+bufferline = "never"
+end-of-line-diagnostics = "hint"
+line-number = "relative"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+

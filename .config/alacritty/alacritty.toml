@@ -1,0 +1,32 @@
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "PragmataPro Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "PragmataPro Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "PragmataPro Mono"
+style = "Italic"
+
+[font.normal]
+family = "PragmataPro Mono"
+style = "Regular"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "T"
+mods = "Command | Shift"
+
+[window]
+option_as_alt = "OnlyLeft"
+
+[general]
+# import = ["/Users/janis/.config/alacritty/themes/themes/solarized_dark.toml"]
+# import = ["/Users/janis/.config/alacritty/themes/themes/dayfox.toml"]
+import = ["/Users/janis/.config/alacritty/themes/themes/everforest_dark.toml"]
